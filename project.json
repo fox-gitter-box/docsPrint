@@ -3,6 +3,7 @@
   "description": "EJR-PE Tisk dokumentace (pro PE - Admin)",
   "main": "Main.xaml",
   "dependencies": {
+    "RPAbyPW.Printer.Activities": "[1.0.0]",
     "UiPath.Credentials.Activities": "[1.1.6479.13204]",
     "UiPath.Excel.Activities": "[2.10.4]",
     "UiPath.Mail.Activities": "[1.10.4-beta.1538371]",
@@ -13,7 +14,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "21.4.1.0",
-  "projectVersion": "1.1.19",
+  "projectVersion": "1.1.25",
   "runtimeOptions": {
     "autoDispose": false,
     "isPausable": true,
