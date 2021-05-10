@@ -385,21 +385,21 @@
                                                   <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
-                                              <If Condition="[System.Text.RegularExpressions.Regex.IsMatch(cisloCitace,&quot;^\d{1,2}$&quot;)]" DisplayName="Je zadané číslo jedno nebo dvou ciferné?" sap:VirtualizedContainerService.HintSize="721,1582" sap2010:WorkflowViewState.IdRef="If_17">
+                                              <If Condition="[System.Text.RegularExpressions.Regex.IsMatch(cisloCitace,&quot;^\d{1,2}$&quot;)]" DisplayName="Je zadané číslo jedno nebo dvou ciferné?" sap:VirtualizedContainerService.HintSize="487,953" sap2010:WorkflowViewState.IdRef="If_17">
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                     <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
                                                 <If.Then>
-                                                  <Sequence sap:VirtualizedContainerService.HintSize="476,1424" sap2010:WorkflowViewState.IdRef="Sequence_131">
+                                                  <Sequence sap:VirtualizedContainerService.HintSize="242,795" sap2010:WorkflowViewState.IdRef="Sequence_131">
                                                     <sap:WorkflowViewStateService.ViewState>
                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                         <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                                       </scg:Dictionary>
                                                     </sap:WorkflowViewStateService.ViewState>
-                                                    <Sequence DisplayName="opuštění okna a tištění postupu" sap:VirtualizedContainerService.HintSize="434,66" sap2010:WorkflowViewState.IdRef="Sequence_124">
+                                                    <Sequence DisplayName="opuštění okna a tištění postupu" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_124">
                                                       <sap:WorkflowViewStateService.ViewState>
                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -412,7 +412,7 @@
                                                         </uix:NClick.Target>
                                                       </uix:NClick>
                                                     </Sequence>
-                                                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Otevřít CA51 a tisknout" sap:VirtualizedContainerService.HintSize="434,51" sap2010:WorkflowViewState.IdRef="NApplicationCard_47" Version="V1">
+                                                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Otevřít CA51 a tisknout" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NApplicationCard_47" Version="V1">
                                                       <uix:NApplicationCard.Body>
                                                         <ActivityAction x:TypeArguments="x:Object">
                                                           <ActivityAction.Argument>
@@ -449,7 +449,7 @@
                                                         </scg:Dictionary>
                                                       </sap:WorkflowViewStateService.ViewState>
                                                     </uix:NApplicationCard>
-                                                    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Použít CA51" sap:VirtualizedContainerService.HintSize="434,51" sap2010:WorkflowViewState.IdRef="NApplicationCard_49" Version="V1">
+                                                    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Použít CA51" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NApplicationCard_49" Version="V1">
                                                       <uix:NApplicationCard.Body>
                                                         <ActivityAction x:TypeArguments="x:Object">
                                                           <ActivityAction.Argument>
@@ -566,20 +566,20 @@
                                                         </scg:Dictionary>
                                                       </sap:WorkflowViewStateService.ViewState>
                                                     </uix:NApplicationCard>
-                                                    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Výběr tiskárni a odeslání do tisku" sap:VirtualizedContainerService.HintSize="434,680" sap2010:WorkflowViewState.IdRef="NApplicationCard_51" Version="V1">
+                                                    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Výběr tiskárni a odeslání do tisku" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NApplicationCard_51" Version="V1">
                                                       <uix:NApplicationCard.Body>
                                                         <ActivityAction x:TypeArguments="x:Object">
                                                           <ActivityAction.Argument>
                                                             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                                                           </ActivityAction.Argument>
-                                                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,351" sap2010:WorkflowViewState.IdRef="Sequence_129">
+                                                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="242,236" sap2010:WorkflowViewState.IdRef="Sequence_129">
                                                             <sap:WorkflowViewStateService.ViewState>
                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                 <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                                               </scg:Dictionary>
                                                             </sap:WorkflowViewStateService.ViewState>
-                                                            <uix:NSelectItem DisplayName="Vyber správnou tiskárnu" sap:VirtualizedContainerService.HintSize="334,166" sap2010:WorkflowViewState.IdRef="NSelectItem_16" Item="\\ejr-pcs1\DR100000001849">
+                                                            <uix:NSelectItem DisplayName="Vyber správnou tiskárnu" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NSelectItem_16" Item="\\ejr-pcs1\DR100000001849">
                                                               <uix:NSelectItem.Items>
                                                                 <scg:List x:TypeArguments="x:String" Capacity="12">
                                                                   <x:String>Fax</x:String>
@@ -601,12 +601,12 @@
                                                               </uix:NSelectItem.Target>
                                                               <sap:WorkflowViewStateService.ViewState>
                                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
-                                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                                                 </scg:Dictionary>
                                                               </sap:WorkflowViewStateService.ViewState>
                                                             </uix:NSelectItem>
-                                                            <uix:NClick ClickType="Single" DisplayName="Odeslat do tisku" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="NClick_69" KeyModifiers="None" MouseButton="Left">
+                                                            <uix:NClick ClickType="Single" DisplayName="Odeslat do tisku" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NClick_69" KeyModifiers="None" MouseButton="Left">
                                                               <uix:NClick.Target>
                                                                 <uix:TargetAnchorable DesignTimeRectangle="384, 245, 20, 20" ElementType="Button" FriendlyName="'Button Dále (Shift+F1)'" FullSelectorArgument="&lt;sap id='tbar[0]/btn[13]' /&gt;" FuzzySelectorArgument="&lt;sap id='tbar[0]/btn[13]' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGqSURBVEhLvZVPS8JwAIb7IH2LjkHnvkJ0CoSCik4eIqggyk5hYBhZShbYIYoOQYe8hZSH8mBUBBYKNozSUVr+29veH1my7ed0YYcH3dz7PNsu9uTUErrJ/wU+lB1s+efgco39CTroMgXWvDM43PNAKz8AlbQjuKWDLlNgcmIcaiYMrZIF6u+O4JYOuqQBVJ+A4pkz9K19oJazHhu4TFxhyNuP0dUp8V2c17e2Aa2aMcmMUDjgHoQn2idghOe5tQ+U74C3UynN8unjXvHJJ+Fv3LYMFBgoxgD1yBIrOY/FK9J/55YOaSCf3ob2FhUDPra4s3xEIJPH4/Gfa7ilwzZAOQVkeGmkLXlHAd65UWY8Fq+lSd5W4OUxpF90YnnHpjt/DZnglg5p4DkVhKYeiItbvhaDuAG3dEgDyn0A9e8AoawRsZMTbumQBrK366gXfgOkERHvvOm8FdzSIQ2kkz5ToBO4pUMaSCVWUMvvW47bgVs6pIHr82UUlQg+lYAjuKXDMrDhm0XQ70YytoCbi0VHcEsHXaZAObeL8Oa85d9gJ9BBlynQLbocKOELFr6Ipmmz5ycAAAAASUVORK5CYII=" InformativeScreenshot="8a6c2bbcfe0bd3445f448cbbb9806fbd.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Tisk obrazovkové sestavy' idx='*' /&gt;" SearchSteps="Selector" />
                                                               </uix:NClick.Target>
@@ -625,12 +625,12 @@
                                                       </uix:NApplicationCard.TargetApp>
                                                       <sap:WorkflowViewStateService.ViewState>
                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                         </scg:Dictionary>
                                                       </sap:WorkflowViewStateService.ViewState>
                                                     </uix:NApplicationCard>
-                                                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="čekni ikonu tisku (1)" sap:VirtualizedContainerService.HintSize="434,51" sap2010:WorkflowViewState.IdRef="NApplicationCard_57" Version="V1">
+                                                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="čekni ikonu tisku (1)" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NApplicationCard_57" Version="V1">
                                                       <uix:NApplicationCard.Body>
                                                         <ActivityAction x:TypeArguments="x:Object">
                                                           <ActivityAction.Argument>
@@ -643,7 +643,7 @@
                                                                 <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                                               </scg:Dictionary>
                                                             </sap:WorkflowViewStateService.ViewState>
-                                                            <uix:NCheckState Exists="{x:Null}" DisplayName="Check App State 'Zbývající dokumenty'" EnableIfExists="False" sap:VirtualizedContainerService.HintSize="420,419" sap2010:WorkflowViewState.IdRef="NCheckState_12">
+                                                            <uix:NCheckState Exists="{x:Null}" DisplayName="Check App State 'Zbývající dokumenty'" EnableIfExists="False" sap:VirtualizedContainerService.HintSize="420,419" sap2010:WorkflowViewState.IdRef="NCheckState_12" Timeout="30">
                                                               <uix:NCheckState.IfExists>
                                                                 <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="250,66" sap2010:WorkflowViewState.IdRef="Sequence_162">
                                                                   <sap:WorkflowViewStateService.ViewState>
@@ -693,7 +693,7 @@
                                                         </scg:Dictionary>
                                                       </sap:WorkflowViewStateService.ViewState>
                                                     </uix:NApplicationCard>
-                                                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="čekni ikonu tisku (0)" sap:VirtualizedContainerService.HintSize="434,51" sap2010:WorkflowViewState.IdRef="NApplicationCard_58" Version="V1">
+                                                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="čekni ikonu tisku (0)" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NApplicationCard_58" Version="V1">
                                                       <uix:NApplicationCard.Body>
                                                         <ActivityAction x:TypeArguments="x:Object">
                                                           <ActivityAction.Argument>
@@ -706,7 +706,7 @@
                                                                 <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                                               </scg:Dictionary>
                                                             </sap:WorkflowViewStateService.ViewState>
-                                                            <uix:NCheckState Exists="{x:Null}" DisplayName="Check App State 'Zbývající dokumenty'" EnableIfExists="False" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NCheckState_13">
+                                                            <uix:NCheckState Exists="{x:Null}" DisplayName="Check App State 'Zbývající dokumenty'" EnableIfExists="False" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NCheckState_13" Timeout="30">
                                                               <uix:NCheckState.IfExists>
                                                                 <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="250,66" sap2010:WorkflowViewState.IdRef="Sequence_165">
                                                                   <sap:WorkflowViewStateService.ViewState>
@@ -756,7 +756,7 @@
                                                         </scg:Dictionary>
                                                       </sap:WorkflowViewStateService.ViewState>
                                                     </uix:NApplicationCard>
-                                                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Zavření tisku a čekání na vytištění" sap:VirtualizedContainerService.HintSize="434,51" sap2010:WorkflowViewState.IdRef="NApplicationCard_56" Version="V1">
+                                                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Zavření tisku a čekání na vytištění" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NApplicationCard_56" Version="V1">
                                                       <uix:NApplicationCard.Body>
                                                         <ActivityAction x:TypeArguments="x:Object">
                                                           <ActivityAction.Argument>
