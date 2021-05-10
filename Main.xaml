@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1684,4982" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ucas="clr-namespace:UiPath.Core.Activities.SAP;assembly=UiPath.UiAutomation.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1684,4291" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ucas="clr-namespace:UiPath.Core.Activities.SAP;assembly=UiPath.UiAutomation.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="86">
       <x:String>System.Activities</x:String>
@@ -86,7 +86,6 @@
       <AssemblyReference>CustomActivityPrint</AssemblyReference>
       <AssemblyReference>Microsoft.Exchange.WebServices</AssemblyReference>
       <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <sap:WorkflowViewStateService.ViewState>
@@ -95,7 +94,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap2010:Annotation.AnnotationText="Tisk pracovního postupu ze SAPu na základě zadání čísla výrobku a čísla čítače." DisplayName="Tisk_PP_ze_SAPu" sap:VirtualizedContainerService.HintSize="1694,4917" sap2010:WorkflowViewState.IdRef="Sequence_160">
+  <Sequence sap2010:Annotation.AnnotationText="Tisk pracovního postupu ze SAPu na základě zadání čísla výrobku a čísla čítače." DisplayName="Tisk_PP_ze_SAPu" sap:VirtualizedContainerService.HintSize="1694,4226" sap2010:WorkflowViewState.IdRef="Sequence_160">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -103,7 +102,7 @@
         <x:Boolean x:Key="IsPinned">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Tištění dokumentace" sap:VirtualizedContainerService.HintSize="1652,4703" sap2010:WorkflowViewState.IdRef="Sequence_159">
+    <Sequence DisplayName="Tištění dokumentace" sap:VirtualizedContainerService.HintSize="1652,4012" sap2010:WorkflowViewState.IdRef="Sequence_159">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="usernameSAP" />
         <Variable x:TypeArguments="ss:SecureString" Name="passwordSAP" />
@@ -123,7 +122,7 @@
           <x:Boolean x:Key="IsPinned">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence sap2010:Annotation.AnnotationText="Přes všechny řádky v excelu tiskni návod ze sapu" DisplayName="Tištění návodů" sap:VirtualizedContainerService.HintSize="1610,4399" sap2010:WorkflowViewState.IdRef="Sequence_140">
+      <Sequence sap2010:Annotation.AnnotationText="Přes všechny řádky v excelu tiskni návod ze sapu" DisplayName="Tištění návodů" sap:VirtualizedContainerService.HintSize="1610,3708" sap2010:WorkflowViewState.IdRef="Sequence_140">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -131,7 +130,7 @@
             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel SCOPE" sap:VirtualizedContainerService.HintSize="1568,51" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_5" InstanceCachePeriod="3000" Visible="False" WorkbookPath="G:\PE\003_Shared\Tisk dokumentace\Tisk dokumentace - Zádání pro robota.xlsx">
+        <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel SCOPE" sap:VirtualizedContainerService.HintSize="1334,51" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_5" InstanceCachePeriod="3000" Visible="False" WorkbookPath="G:\PE\003_Shared\Tisk dokumentace\Tisk dokumentace - Zádání pro robota.xlsx">
           <ui:ExcelApplicationScope.Body>
             <ActivityAction x:TypeArguments="ui:WorkbookApplication">
               <ActivityAction.Argument>
@@ -161,20 +160,20 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
         </ui:ExcelApplicationScope>
-        <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[outDt]" DisplayName="pro každé číslo dílu" sap:VirtualizedContainerService.HintSize="1568,4185" sap2010:WorkflowViewState.IdRef="ForEachRow_5">
+        <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[outDt]" DisplayName="pro každé číslo dílu" sap:VirtualizedContainerService.HintSize="1334,3494" sap2010:WorkflowViewState.IdRef="ForEachRow_5">
           <ui:ForEachRow.Body>
             <ActivityAction x:TypeArguments="sd:DataRow">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1534,4065" sap2010:WorkflowViewState.IdRef="Sequence_139">
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1300,3374" sap2010:WorkflowViewState.IdRef="Sequence_139">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <If Condition="[String.IsNullOrWhitespace(row(0).ToString)]" DisplayName="Pokud je excelové políčko prázdne tak další" sap:VirtualizedContainerService.HintSize="1492,3973" sap2010:WorkflowViewState.IdRef="If_19">
+                <If Condition="[String.IsNullOrWhitespace(row(0).ToString)]" DisplayName="Pokud je excelové políčko prázdne tak další" sap:VirtualizedContainerService.HintSize="1258,3282" sap2010:WorkflowViewState.IdRef="If_19">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsPinned">True</x:Boolean>
@@ -182,14 +181,14 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <If.Else>
-                    <Sequence sap:VirtualizedContainerService.HintSize="1347,3815" sap2010:WorkflowViewState.IdRef="Sequence_138">
+                    <Sequence sap:VirtualizedContainerService.HintSize="1113,3124" sap2010:WorkflowViewState.IdRef="Sequence_138">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Assign sap:VirtualizedContainerService.HintSize="1305,60" sap2010:WorkflowViewState.IdRef="Assign_8">
+                      <Assign sap:VirtualizedContainerService.HintSize="1071,60" sap2010:WorkflowViewState.IdRef="Assign_8">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:String">[partNumber]</OutArgument>
                         </Assign.To>
@@ -197,29 +196,29 @@
                           <InArgument x:TypeArguments="x:String">[row(0).ToString]</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <If Condition="[System.Text.RegularExpressions.Regex.IsMatch(partNumber,&quot;^\d{6}$&quot;)]" DisplayName="Pokud je číslo dílu tak tiskni návod" sap:VirtualizedContainerService.HintSize="1305,3623" sap2010:WorkflowViewState.IdRef="If_18">
+                      <If Condition="[System.Text.RegularExpressions.Regex.IsMatch(partNumber,&quot;^\d{6}$&quot;)]" DisplayName="Pokud je číslo dílu tak tiskni návod" sap:VirtualizedContainerService.HintSize="1071,2932" sap2010:WorkflowViewState.IdRef="If_18">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsPinned">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <If.Then>
-                          <Sequence sap:VirtualizedContainerService.HintSize="1269,3446" sap2010:WorkflowViewState.IdRef="Sequence_137">
+                          <Sequence sap:VirtualizedContainerService.HintSize="1035,2755" sap2010:WorkflowViewState.IdRef="Sequence_137">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="1227,61" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="[partNumber]" />
-                            <Sequence DisplayName="Hledání čítače a tisk" sap:VirtualizedContainerService.HintSize="1227,3253" sap2010:WorkflowViewState.IdRef="Sequence_136">
+                            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="993,61" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="[partNumber]" />
+                            <Sequence DisplayName="Hledání čítače a tisk" sap:VirtualizedContainerService.HintSize="993,2562" sap2010:WorkflowViewState.IdRef="Sequence_136">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:GetSecureCredential CredentialType="Generic" DisplayName="Get secure credential" sap:VirtualizedContainerService.HintSize="1185,51" sap2010:WorkflowViewState.IdRef="GetSecureCredential_4" Password="[passwordSAP]" PersistanceType="Enterprise" Target="SAP" Username="[usernameSAP]">
+                              <ui:GetSecureCredential CredentialType="Generic" DisplayName="Get secure credential" sap:VirtualizedContainerService.HintSize="951,51" sap2010:WorkflowViewState.IdRef="GetSecureCredential_4" Password="[passwordSAP]" PersistanceType="Enterprise" Target="SAP" Username="[usernameSAP]">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -227,7 +226,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </ui:GetSecureCredential>
-                              <ucas:Logon Window="{x:Null}" ConnectionName="EJH-P11 (Produktivsystem)" DelayBetweenRetries="500" DisplayName="Sap logon" sap:VirtualizedContainerService.HintSize="1185,51" sap2010:WorkflowViewState.IdRef="Logon_4" Retries="5" SAPLogonPath="C:\Program Files (x86)\SAP\FrontEnd\SAPgui\saplogon.exe">
+                              <ucas:Logon Window="{x:Null}" ConnectionName="EJH-P11 (Produktivsystem)" DelayBetweenRetries="500" DisplayName="Sap logon" sap:VirtualizedContainerService.HintSize="951,51" sap2010:WorkflowViewState.IdRef="Logon_4" Retries="5" SAPLogonPath="C:\Program Files (x86)\SAP\FrontEnd\SAPgui\saplogon.exe">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -235,7 +234,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </ucas:Logon>
-                              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Přihlášení se do sapu" sap:VirtualizedContainerService.HintSize="1185,51" sap2010:WorkflowViewState.IdRef="NApplicationCard_45" Version="V1">
+                              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Přihlášení se do sapu" sap:VirtualizedContainerService.HintSize="951,51" sap2010:WorkflowViewState.IdRef="NApplicationCard_45" Version="V1">
                                 <uix:NApplicationCard.Body>
                                   <ActivityAction x:TypeArguments="x:Object">
                                     <ActivityAction.Argument>
@@ -279,7 +278,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </uix:NApplicationCard>
-                              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Otevřít transakci CA03 a uložit čítač" sap:VirtualizedContainerService.HintSize="1185,51" sap2010:WorkflowViewState.IdRef="NApplicationCard_46" Version="V1">
+                              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Otevřít transakci CA03 a uložit čítač" sap:VirtualizedContainerService.HintSize="951,51" sap2010:WorkflowViewState.IdRef="NApplicationCard_46" Version="V1">
                                 <uix:NApplicationCard.Body>
                                   <ActivityAction x:TypeArguments="x:Object">
                                     <ActivityAction.Argument>
@@ -323,20 +322,20 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </uix:NApplicationCard>
-                              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Použij CS03, najdi čítače a tiskni" sap:VirtualizedContainerService.HintSize="1185,2797" sap2010:WorkflowViewState.IdRef="NApplicationCard_53" Version="V1">
+                              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Použij CS03, najdi čítače a tiskni" sap:VirtualizedContainerService.HintSize="951,2106" sap2010:WorkflowViewState.IdRef="NApplicationCard_53" Version="V1">
                                 <uix:NApplicationCard.Body>
                                   <ActivityAction x:TypeArguments="x:Object">
                                     <ActivityAction.Argument>
                                       <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                                     </ActivityAction.Argument>
-                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1151,2468" sap2010:WorkflowViewState.IdRef="Sequence_135">
+                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="917,1777" sap2010:WorkflowViewState.IdRef="Sequence_135">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Vyplnit číslo dílu" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1109,51" sap2010:WorkflowViewState.IdRef="NTypeInto_23" Text="[partNumber]">
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Vyplnit číslo dílu" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="875,51" sap2010:WorkflowViewState.IdRef="NTypeInto_23" Text="[partNumber]">
                                         <uix:NTypeInto.Target>
                                           <uix:TargetAnchorable DesignTimeRectangle="179, 181, 146, 20" ElementType="InputBox" FriendlyName="'CTextField Číslo'" FullSelectorArgument="&lt;sap id='usr/ctxtRC27M-MATNR' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/ctxtRC27M-MATNR' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJYAAAAYCAYAAAAYuwRKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANbSURBVGhD7dvfUxJrHMdx/6suu+hPyOac64pm6rKL0zRz8sJmbJqmLBUk5IdIhqIpKCLoKSnwiKSRIqEmkPFDRcU1FJCsz+F5ZhA8g+VOs7XTfHfmdbXfi7148zy7s0sdZHYIgsB1dnaisekudF3d8PhmEUmsYy2TRXo3RyTwsa6uplqzp0FhkRP9tmGdr6/HZYUCf99qwP0HzWhtU0KpaicSeqzRYHR0FC2tbTysh49aRFFrOmAwdsk7rBvXL6D57hXYLA2YfvkQQb8KoRk1kcj8tBIvxx5Bp9ND2CvysDLZoihbwgGck8vyDqupoR5GtQK+5w2Ih5ux/UEJId5OJJJaViE43Q6NVofcwSEPq3j4RZRs/jOcU1F5h3Xv9h/o0V/FW28jtmKtyG9oUNzSEolkk2qEAx3Q6g3IH3zhYa1lCqLs5Q/h9MXkHdb9pj9hMV5D0He79ItS4vO2Fl8FPZFIId2B90E99IZOHlZyO39kdSOLc2fPfBOb2S8cwkVhkWrlsNjNN9vSPqznjryLbvJ4JgKLNbFzbGandG9GYZFjymEZTU+Q+VREKLZzbEU6STmsmXAKG5kDCoscx8JaWTDA1N2NxGYe/wZTPJhvHdVhed/GsZLcp7DIcSysaMiAbrMZ0fV9jL9eFRUWm19Y/QSX3J8KKayfq5DWIhY2wtxrwXJiD/bJqKiw2HwgIpRWLAqLVKGwiCSqw5qP7WLw1cqpwipj85OhbTinVigsUsHCWl3sQq+lT1RY6l43TPZZ2LwxHpZjconCIhWFTS0+Lj2Bpf8Z5kSEZXbN86gc/iS8LCzPIoVFKlhY8fdP0T8wWApLOArre9ica3aD84a2MPJqgcIiFSysRMSMAasVc5EdvgqxLa6jz3Oi8hZYDssTTMP2Yo7CIhUsrFS0F1bbEN4sp/lL6P4XS7D8Ez4RO8/Csk/FuYlAAv1OP4VFKnLpLqxHzbAN2+GefsfDGhyfEeWZyw/r+GvU9Qw9h5xUh3Wn8SJMur/g97QgFXkKYW0A2bSVSGQn2YOFgAl2xyiGx8Z4WNZSZGI4XONwT/nkvWJdUihw4+ZNtKlU6OnrK134MIZGRoiEHE4XJtxu/t06C+v/37KflqzDoj9T/FoUFvlhLKJaas1+Xw7/ARnIOVRYte2eAAAAAElFTkSuQmCC" InformativeScreenshot="00e8f2b65e9111e18a7bc7684c1a14ae.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Zobrazení Normální prac.postup: Vst.obrazovka' /&gt;" SearchSteps="Selector" />
                                         </uix:NTypeInto.Target>
@@ -347,7 +346,7 @@
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                       </uix:NTypeInto>
-                                      <uix:NClick ClickType="Single" DisplayName="Kliknout na postupy" sap:VirtualizedContainerService.HintSize="1109,51" sap2010:WorkflowViewState.IdRef="NClick_63" KeyModifiers="None" MouseButton="Left">
+                                      <uix:NClick ClickType="Single" DisplayName="Kliknout na postupy" sap:VirtualizedContainerService.HintSize="875,51" sap2010:WorkflowViewState.IdRef="NClick_63" KeyModifiers="None" MouseButton="Left">
                                         <uix:NClick.Target>
                                           <uix:TargetAnchorable DesignTimeRectangle="55, 113, 78, 20" ElementType="Button" FriendlyName="'Postupy'" FullSelectorArgument="&lt;sap id='tbar[1]/btn[7]' /&gt;" FuzzySelectorArgument="&lt;sap id='tbar[1]/btn[7]' check:text='Postupy' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFIAAAAYCAYAAABp76qRAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARtSURBVFhH7ZjfT5tVGMffKy+80itj4r+gGf1xZfTGG/8AJ6m0bLsy8cYrk22BtSkDjIkJxmwki6HDhrSrP8Z0sjCcMFI76Ci4yXQT2AhLwxAcjIXIjfl6vqfvOT3v23e8RcmWkF58ct7nPM952n7yHEpqzSw8QIP/T0PkHtEQuUfUiLx07Tb6BifRkx5r4AHd0JHbm0Pk4NVbyF6axvz9NTza2q5hceo8VvvfwKNTL2HjE0uujLnvVb8foRs6oivTnUPk6Wwe5dVNrD/+u4a5XETK2/7meWz/+AL+yb8oV8bcZ97r3H6EjujKdOcQydF9uLlVAyVtpZ7TAt1wn3nWeZ3fj9CV6a5G5NrGlgNeW0qSwsT0uSWasI717h77EV+RK+uPHXDKKFBNnJJqogRzZY0+X/oYQcuCpTmCjNF7d9xAMhxGsuSVe/r4ilz+a9MBv1CUxIWFhRqZpmBecdbr81PdQuRhDNhx4WQYVqgbBZXfFTNIhMJITHnlnj6+IsurGw7Ut/P8TAGtn5+XK2Pz76IpmPX6/GSXFJneMVbTKiRN2vuCdGt1koMdXwmJ1VgS6kKe57ma/VRsPyd0H9V/WvZqydpnSPZwpZ+K68BX5NLKugNKm/0+gxMDl/FW59dyZUxpSvCJsye1YKLPT3QiYB1Cv2dcQjxo4b2MncscghXsxLj7eSWHeLJk14cRn7DrCfvpOlcsX6vafzwpboPZP5bTffpjxvuoE1+Ri8sPHVDales3YUU/Rc/FW3JlzP8fpWAhMdLzulwZczL1+UJFXMqOU1ExGdFcNSc+2JiqXc4hYoXQXhDPAxWR1RwpoT1o59Weu4cZ79RfPqv3ZT7Xj6/Iu+U1B7y2nMTIqSH0j87JlfH8ndsoFot486O30X0lKFfGnEx9Pt+BJvM6BjswqnLpVmdcLqJNTGgkXX1W56p7IbTlVb2A/c0eZuzOlbNSpDrf12KhKVHEaCIEqyVr19SPr8g/lv50oK40JXIiO78t4eUPejH9ywxauo7IaaRIrowpXp8fT+KAFcMXRr8n5zJoFh/0+LhRIxiJiw8aSGJkaQLHA668uwdjWet6fmJtDM3unnXiK/L3xRWNutKUR4mUSalduZ+QyZ7TEo/98IqWyX3dY6zy5s8YPatM4GjAwrspO07FpLBh8TzcHsPRMWM/kpHPZyJGPZH9g7qWedVD5tSzYLg9qPtUqLy+rt8lviJn7y5L3FfavNacRnWlKVGhrrjqMTuawGtWFL0qdiPz6gobdX1Rfa0d+2Z9UwJDYm+oTQiy9w62iby97+xdrTdfv1eIP9jn3KsXX5E358pSIqfOfaXVF837n33omEa3SPZ45oxUpF70yknSeMdqwWnPnD87iuw9l8e1X+9JgZRmYk6iH9N37j97Lsfx6oE4LnjlBBeOBWA1f+mZ84OO6Mp05xA5eHUWZ78r4ucb93D9t6UGHtANHdGV6c4hkvB3Nv5ExNFtUAvduH+LJDUiG/w3GiL3iIbIPeEB/gU6CasTozrP3AAAAABJRU5ErkJggg==" InformativeScreenshot="e0954b9ca95baaa281af1361b9aacdf5.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Zobrazení Normální prac.postup: Vst.obrazovka' /&gt;" SearchSteps="Selector" />
                                         </uix:NClick.Target>
@@ -358,16 +357,16 @@
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                       </uix:NClick>
-                                      <uix:NCheckState Exists="{x:Null}" DisplayName="Check App State 'Materiál 784930'" sap:VirtualizedContainerService.HintSize="1109,2192" sap2010:WorkflowViewState.IdRef="NCheckState_9" Timeout="3">
+                                      <uix:NCheckState Exists="{x:Null}" DisplayName="Check App State 'Materiál 784930'" sap:VirtualizedContainerService.HintSize="875,1501" sap2010:WorkflowViewState.IdRef="NCheckState_9" Timeout="3">
                                         <uix:NCheckState.IfExists>
-                                          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="805,1926" sap2010:WorkflowViewState.IdRef="Sequence_133">
+                                          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="571,1235" sap2010:WorkflowViewState.IdRef="Sequence_133">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                 <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Zadej číslo čítače" sap:VirtualizedContainerService.HintSize="763,51" sap2010:WorkflowViewState.IdRef="InputDialog_8" IsPassword="False" Label="Vyber číslo čítače a napiš ho zde:" Title="Číslo čítače">
+                                            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Zadej číslo čítače" sap:VirtualizedContainerService.HintSize="529,51" sap2010:WorkflowViewState.IdRef="InputDialog_8" IsPassword="False" Label="Vyber číslo čítače a napiš ho zde:" Title="Číslo čítače">
                                               <ui:InputDialog.Result>
                                                 <OutArgument x:TypeArguments="x:String">[cisloCitace]</OutArgument>
                                               </ui:InputDialog.Result>
@@ -378,21 +377,21 @@
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
                                             </ui:InputDialog>
-                                            <Sequence DisplayName="Dokončení tištění pracovního postupu" sap:VirtualizedContainerService.HintSize="763,1741" sap2010:WorkflowViewState.IdRef="Sequence_132">
+                                            <Sequence DisplayName="Dokončení tištění pracovního postupu" sap:VirtualizedContainerService.HintSize="529,1050" sap2010:WorkflowViewState.IdRef="Sequence_132">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                   <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
-                                              <If Condition="[System.Text.RegularExpressions.Regex.IsMatch(cisloCitace,&quot;^\d{1,2}$&quot;)]" DisplayName="Je zadané číslo jedno nebo dvou ciferné?" sap:VirtualizedContainerService.HintSize="487,953" sap2010:WorkflowViewState.IdRef="If_17">
+                                              <If Condition="[System.Text.RegularExpressions.Regex.IsMatch(cisloCitace,&quot;^\d{1,2}$&quot;)]" DisplayName="Je zadané číslo jedno nebo dvou ciferné?" sap:VirtualizedContainerService.HintSize="487,956" sap2010:WorkflowViewState.IdRef="If_17">
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                     <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
                                                 <If.Then>
-                                                  <Sequence sap:VirtualizedContainerService.HintSize="242,795" sap2010:WorkflowViewState.IdRef="Sequence_131">
+                                                  <Sequence sap:VirtualizedContainerService.HintSize="242,797" sap2010:WorkflowViewState.IdRef="Sequence_131">
                                                     <sap:WorkflowViewStateService.ViewState>
                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -636,14 +635,14 @@
                                                           <ActivityAction.Argument>
                                                             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                                                           </ActivityAction.Argument>
-                                                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="462,513" sap2010:WorkflowViewState.IdRef="Sequence_164">
+                                                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="242,145" sap2010:WorkflowViewState.IdRef="Sequence_164">
                                                             <sap:WorkflowViewStateService.ViewState>
                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                 <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                                               </scg:Dictionary>
                                                             </sap:WorkflowViewStateService.ViewState>
-                                                            <uix:NCheckState Exists="{x:Null}" DisplayName="Check App State 'Zbývající dokumenty'" EnableIfExists="False" sap:VirtualizedContainerService.HintSize="420,419" sap2010:WorkflowViewState.IdRef="NCheckState_12" Timeout="30">
+                                                            <uix:NCheckState Exists="{x:Null}" DisplayName="Check App State 'Zbývající dokumenty'" EnableIfExists="False" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NCheckState_12" Timeout="120">
                                                               <uix:NCheckState.IfExists>
                                                                 <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="250,66" sap2010:WorkflowViewState.IdRef="Sequence_162">
                                                                   <sap:WorkflowViewStateService.ViewState>
@@ -675,8 +674,8 @@
                                                               </uix:NCheckState.Target>
                                                               <sap:WorkflowViewStateService.ViewState>
                                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
-                                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                                                 </scg:Dictionary>
                                                               </sap:WorkflowViewStateService.ViewState>
                                                             </uix:NCheckState>
@@ -706,7 +705,7 @@
                                                                 <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                                               </scg:Dictionary>
                                                             </sap:WorkflowViewStateService.ViewState>
-                                                            <uix:NCheckState Exists="{x:Null}" DisplayName="Check App State 'Zbývající dokumenty'" EnableIfExists="False" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NCheckState_13" Timeout="30">
+                                                            <uix:NCheckState Exists="{x:Null}" DisplayName="Check App State 'Zbývající dokumenty'" EnableIfExists="False" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NCheckState_13" Timeout="120">
                                                               <uix:NCheckState.IfExists>
                                                                 <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="250,66" sap2010:WorkflowViewState.IdRef="Sequence_165">
                                                                   <sap:WorkflowViewStateService.ViewState>
